@@ -10,8 +10,9 @@ import {
   useResize,
 } from 'react-native-lifecycle';
 import {useNavigation} from '@react-navigation/native';
+import {Hoc} from '../../../components';
 
-export default () => {
+const Index = () => {
   const navigation = useNavigation();
 
   const onClick = () => {
@@ -61,3 +62,5 @@ export default () => {
     </View>
   );
 };
+
+export default Hoc(Index);

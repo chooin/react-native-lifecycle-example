@@ -5389,10 +5389,10 @@ react-native-gesture-handler@^1.10.3:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
-react-native-lifecycle@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.npmjs.org/react-native-lifecycle/-/react-native-lifecycle-1.2.3.tgz#9b60a01fc30f661d22f6fa3b1a545b05203ce610"
-  integrity sha512-BlOBdotLSnGb8RXzB7zSj9nrxdtSxgq4ywzVT0Cbn1JUFTcVjAbjWWpGDW399M5nVGSHj/9vgr6aF6x82DBl8g==
+react-native-lifecycle@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.npmjs.org/react-native-lifecycle/-/react-native-lifecycle-1.2.4.tgz#08c5b542e1abfe2331d18cd5fc1fc084f7a5ee5f"
+  integrity sha512-s1eqGAgujcsoIZJMjtYZS12nlbsF8Hc7iQMiKeD09eyml5u8W/k/BlLaiK8JT1Kui04AM2GaK4ni53/pZja7CA==
 
 react-native-reanimated@^2.1.0:
   version "2.2.0"
