@@ -10,9 +10,8 @@ import {
   useResize,
 } from 'react-native-lifecycle';
 import {useNavigation} from '@react-navigation/native';
-import {Hoc} from '../../../components';
 
-const Index = () => {
+export default () => {
   const navigation = useNavigation();
 
   const onClick = () => {
@@ -21,37 +20,37 @@ const Index = () => {
 
   // Called when the application from background to foreground
   useAppActive(() => {
-    console.log('useAppActive');
+    console.log('Home useAppActive');
   });
 
   // Called when the application from foreground to background
   useAppInactive(() => {
-    console.log('useAppInactive');
+    console.log('Home useAppInactive');
   });
 
   // Called when the page load
   useLoad(() => {
-    console.log('useLoad');
+    console.log('Home useLoad');
   });
 
   // Called when the page is displayed or in the application from background to foreground
   useShow(() => {
-    console.log('useShow');
+    console.log('Home useShow');
   });
 
   // Called when the page is hidden or in the application from foreground to background
   useHide(() => {
-    console.log('useHide');
+    console.log('Home useHide');
   });
 
   // Called when the page is unloaded
   useUnload(() => {
-    console.log('useUnload');
+    console.log('Home useUnload');
   });
 
   // Called after the page window resize
   useResize(() => {
-    console.log('useResize');
+    console.log('Home useResize');
   });
 
   return (
@@ -62,5 +61,3 @@ const Index = () => {
     </View>
   );
 };
-
-export default Hoc(Index);

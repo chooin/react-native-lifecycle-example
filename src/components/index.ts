@@ -1,1 +1,1 @@
-export { default as Hoc } from './hoc'
+export {default as Hoc} from './hoc';
