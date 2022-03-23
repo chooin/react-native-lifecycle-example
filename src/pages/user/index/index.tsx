@@ -4,10 +4,10 @@ import {
   useAppActive,
   useAppInactive,
   useHide,
-  useLoad,
+  useMount,
   useResize,
   useShow,
-  useUnload,
+  useUnmount,
 } from 'react-native-lifecycle';
 import {Hoc} from '../../../components';
 
@@ -23,8 +23,8 @@ const Index = () => {
   });
 
   // Called when the page load
-  useLoad(() => {
-    console.log('User useLoad');
+  useMount(() => {
+    console.log('User useMount');
   });
 
   // Called when the page is displayed or in the application from background to foreground
@@ -38,8 +38,8 @@ const Index = () => {
   });
 
   // Called when the page is unloaded
-  useUnload(() => {
-    console.log('User useUnload');
+  useUnmount(() => {
+    console.log('User useUnmount');
   });
 
   // Called after the page window resize

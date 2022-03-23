@@ -3,10 +3,10 @@ import {View, Pressable, Text} from 'react-native';
 import {
   useAppActive,
   useAppInactive,
-  useLoad,
+  useMount,
   useShow,
   useHide,
-  useUnload,
+  useUnmount,
   useResize,
 } from 'react-native-lifecycle';
 import {useNavigation} from '@react-navigation/native';
@@ -29,8 +29,8 @@ export default () => {
   });
 
   // Called when the page load
-  useLoad(() => {
-    console.log('Home useLoad');
+  useMount(() => {
+    console.log('Home useMount');
   });
 
   // Called when the page is displayed or in the application from background to foreground
@@ -44,8 +44,8 @@ export default () => {
   });
 
   // Called when the page is unloaded
-  useUnload(() => {
-    console.log('Home useUnload');
+  useUnmount(() => {
+    console.log('Home useUnmount');
   });
 
   // Called after the page window resize
