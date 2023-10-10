@@ -10,4 +10,4 @@ import Routes from './src/routes';
 
 export default () => {
   return <Routes />;
-};;
+};

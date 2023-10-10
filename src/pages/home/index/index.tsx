@@ -18,32 +18,32 @@ export default () => {
     navigation.navigate('/user/index');
   };
 
-  // Called when the application from background to foreground
+  // Called when the application switches from the background to the foreground
   useAppActive(() => {
     console.log('Home useAppActive');
   });
 
-  // Called when the application from foreground to background
+  // Called when the application switches from the foreground to background
   useAppInactive(() => {
     console.log('Home useAppInactive');
   });
 
-  // Called when the page load
+  // Called when the component is mounted
   useMount(() => {
     console.log('Home useMount');
   });
 
-  // Called when the page is displayed or in the application from background to foreground
+  // Called when the page is displayed, or when the application switches from the background to the foreground
   useShow(() => {
     console.log('Home useShow');
   });
 
-  // Called when the page is hidden or in the application from foreground to background
+  // Called when the page is hidden, or when the application switches from the foreground to the background
   useHide(() => {
     console.log('Home useHide');
   });
 
-  // Called when the page is unloaded
+  // Called when the component is unmounted
   useUnmount(() => {
     console.log('Home useUnmount');
   });

@@ -12,32 +12,32 @@ import {
 import {Hoc} from '../../../components';
 
 const Index = () => {
-  // Called when the application from background to foreground
+  // Called when the application switches from the background to the foreground
   useAppActive(() => {
     console.log('User useAppActive');
   });
 
-  // Called when the application from foreground to background
+  // Called when the application switches from the foreground to background
   useAppInactive(() => {
     console.log('User useAppInactive');
   });
 
-  // Called when the page load
+  // Called when the component is mounted
   useMount(() => {
     console.log('User useMount');
   });
 
-  // Called when the page is displayed or in the application from background to foreground
+  // Called when the page is displayed, or when the application switches from the background to the foreground
   useShow(() => {
     console.log('User useShow');
   });
 
-  // Called when the page is hidden or in the application from foreground to background
+  // Called when the page is hidden, or when the application switches from the foreground to the background
   useHide(() => {
     console.log('User useHide');
   });
 
-  // Called when the page is unloaded
+  // Called when the component is unmounted
   useUnmount(() => {
     console.log('User useUnmount');
   });
